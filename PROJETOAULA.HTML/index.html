@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Aula 06</h1>
+    </header>
+    <Main>
+        <section>
+         <h2>Video HTML</h2>
+        <video autoplay controls width="500" src="https://videos.rockstargames.com/v4/ks18e7s9/flv/en-us-2160p.mp4"></video>
+         <div>
+            <h3>Videos Youtube</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Zl0dsN5Vu9g?si=Ycg2bxB__p7g-Reg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section>
+            <h2>Tabela</h2>
+            <table border="1"> 
+                <thead>
+                    <tr>
+                        <th>NOME</th>
+                        <th>IDADE</th>
+                        <th colspan="2">PROFISSÃO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Felipe</td>
+                        <td rowspan="">19</td>
+                        <td>Vendedor</td>
+                        <td>Gamer</td>
+                        </tr>
+                        <tr>
+                            <td>Felipe</td>
+                        <!-- <td>19</td> -->
+                        <td>Vendedor</td>
+                        <td>Gamer</td>
+                        </tr>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <h2>Formulario</h2>
+        <form method="post" action="">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="">Nome:</label>
+            <input required placeholder="Escreva seu nome completo" name="Nome-completo" type="text">
+            <br>
+            <label for="">Email:</label>
+            <input name="Email-Pessoal" type="email" value="@unifebe.edu.br">
+        </fieldset>
+
+        <fieldset>
+            <legend>Seleção de Lista</legend>
+            <label for="estado">Selecione o seu estado:</label>
+            <select name="estado-mencionado" id="">
+                <option value="SC">Santa Catarina</option>
+                <option value="PR">Parána</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Qual o melhor período para estudo?</legend>
+
+            <input type="radio" id="manha" nome="periodo-estudo">
+            <label for="manha">Manhã</label>
+
+            <input type="radio" id="tarde" nome="periodo-estudo">
+            <label for="tarde">Tarde</label>
+
+            <input type="radio" id="noite" nome="periodo-estudo">
+            <label for="noite">Noite</label>
+        </fieldset>
+
+        <fieldset>
+
+        <legend>Lista de compra</legend>
+        <input type="checkbox" id="cafe" name="cafe">
+        <label for="cafe">Café</label>
+        <br>
+        <input type="checkbox" id="leite" name="leite">
+        <label for="leite">Leite</label>
+        <br>
+        <input type="checkbox" id="aucar" name="acucar">
+        <label for="acucar">Açucar</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Comentarios</legend>
+        <textarea name="Comentario" id="" cols="30" rows="10"></textarea>
+    </fieldset>
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Reset</button>
+    <fieldset>
+
+    </form>
+</section>
+</main>
+<footer></footer>
+</body>
+</html>
